@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -16,3 +17,11 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+=======
+int ft_tolower(int c)
+{
+    int lower;
+    lower = c + 32;
+    return (lower); 
+}
+>>>>>>> f74c812e685c9c9806d3f4cacbfbe8af4f0250b1

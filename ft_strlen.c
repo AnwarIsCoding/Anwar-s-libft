@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -22,3 +23,15 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+=======
+#include <stddef.h>
+
+size_t ft_strlen(char const *str)
+{
+    int  i;
+    i = 0;
+    while (str[i])
+        i++;
+    return i;
+}
+>>>>>>> f74c812e685c9c9806d3f4cacbfbe8af4f0250b1

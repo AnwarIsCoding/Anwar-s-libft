@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -23,3 +24,18 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	write (fd, "\n", 1);
 }
+=======
+#include <unistd.h>
+
+void ft_putstr_fd(char *str, int fd)
+{
+    int i;
+    i = 0;
+    while (str[i])
+    {
+        write(fd, str + i, 1);
+        i++;
+    }
+    write (fd, "\n", 1);
+}
+>>>>>>> f74c812e685c9c9806d3f4cacbfbe8af4f0250b1

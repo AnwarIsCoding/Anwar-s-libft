@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -22,3 +23,18 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+=======
+int ft_isalnum(char *str)
+{
+    int i;
+    i = 0;
+    while(str[i])
+    {
+        if ((str[i] >= '0' && str[i] <= '9') || (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
+            i++;
+        else 
+            return 0;
+    }
+    return 1;
+}
+>>>>>>> f74c812e685c9c9806d3f4cacbfbe8af4f0250b1

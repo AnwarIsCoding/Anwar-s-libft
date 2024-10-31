@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -18,3 +19,18 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+=======
+int ft_isdigit(char *str)
+{
+    int i;
+    i = 0;
+    while(str[i])
+    {
+        if (str[i] >= '0' && str[i] <= '9')
+            i++;
+        else 
+            return 0;
+    }
+    return 1;
+}
+>>>>>>> f74c812e685c9c9806d3f4cacbfbe8af4f0250b1

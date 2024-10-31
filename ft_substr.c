@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -74,3 +75,24 @@ char *ft_substr(const char *s, unsigned int start, size_t len) {
 
     return str;
 }
+=======
+#include <stdlib.h>
+
+char *ft_substr(char const *s, unsigned int start, size_t len)
+{
+    char *str;
+    size_t  i;
+    size_t  j;
+    i = start;
+    j = 0;
+    str = malloc((int)len);
+    while (i <= len)
+    {
+        str[j] = s[i];
+        j++;
+        i++;
+    }
+    str[j] = '\0';
+    return str;
+}
+>>>>>>> f74c812e685c9c9806d3f4cacbfbe8af4f0250b1

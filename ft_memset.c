@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -25,3 +26,20 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+=======
+#include <stddef.h>
+
+void *ft_memset(void *str, int c, size_t n)
+{
+    size_t i;
+    i = 0;
+    unsigned char *str1 ;
+    str1 = (unsigned char *)str;
+    while (i < n)
+    {
+        str1[i] = (unsigned char)c;
+        i++;
+    }
+    return str;
+}
+>>>>>>> f74c812e685c9c9806d3f4cacbfbe8af4f0250b1
